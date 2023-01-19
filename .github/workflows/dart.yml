@@ -24,11 +24,9 @@ jobs:
       # - uses: dart-lang/setup-dart@v1
       - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
 
-      - name: change Dir
-        run: cd ./reddit
-      
       
       - name: Install dependencies
+        working-directory: ./reddit
         run: dart pub get
 
       # Uncomment this step to verify the use of 'dart format' on each commit.
@@ -37,10 +35,12 @@ jobs:
 
       # Consider passing '--fatal-infos' for slightly stricter analysis.
       - name: Analyze project source
+        working-directory: ./reddit
         run: dart analyze
 
       # Your project will need to have tests in test/ and a dependency on
       # package:test for this step to succeed. Note that Flutter projects will
       # want to change this to 'flutter test'.
       - name: Run tests
+        working-directory: ./reddit
         run: dart test
