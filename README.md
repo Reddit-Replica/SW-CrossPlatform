@@ -2,6 +2,8 @@
 # Reddit Clone - Flutter
 
 * Welcome to the Reddit Clone mobile application built with Flutter! This app replicates the core functionalities of Reddit, providing users with a familiar social media experience. Explore posts, vote, and interact with comments just like on the real Reddit platform.
+## Demo
+* [Reddit Demo](https://drive.google.com/file/d/1Ch4ad5yzArNBrrVtUzTKfV6FvQFZhh9f/view?usp=sharing)
 
 ## Features
 
